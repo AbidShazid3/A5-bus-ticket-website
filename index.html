@@ -11,8 +11,139 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>
-
+<body class="font-raleway">
+    <header class="container mx-auto md:p-2 lg:px-7 hidden">
+        <!-- navbar start -->
+        <nav class="mt-2">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black text-xs font-medium">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-black text-4xl font-extrabold">A-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-black text-lg font-medium">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end flex">
+                    <a class="btn rounded-xl text-[#1DD100] border-[#1DD10066] bg-[#1DD1001A]">Bus
+                        <img src="images/bus-icon.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+        <!-- banner start -->
+        <section class="mt-9">
+            <div class="hero min-h-screen rounded-3xl" style="background-image: url(images/banner.png);">
+                <div class="hero-overlay bg-opacity-5"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="">
+                        <h1 class="mb-12 text-6xl font-extrabold text-white">End-to-End Travel with <br> <span
+                                class="text-[#1DD100] ">A Paribahan</span></h1>
+                        <p class="mb-5 text-sm">Looking for great deals on bus tickets? We'll make it better for you!
+                            Get the lowest prices and <br> renowned bus operators - all in one place.</p>
+                        <button
+                            class="btn btn-primary bg-[#1DD100] text-black text-xl font-bold border-none mt-4 px-5">Buy
+                            Tickets</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center lg:gap-8">
+                <div class="bg-[#FFFFFF] rounded-3xl border-b-4 border-[#1DD100]">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="images/people.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h1 class="text-4xl font-bold">500K+</h1>
+                            <p class="py-2">Registered users</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#FFFFFF] rounded-3xl border-b-4 border-[#1DD100]">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="images/ticket-cupon.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h1 class="text-4xl font-bold">1.7 lacks</h1>
+                            <p class="py-2">Tickets sold</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#FFFFFF] rounded-3xl border-b-4 border-[#1DD100]">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="images/stoppage.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h1 class="text-4xl font-bold">80K+</h1>
+                            <p class="py-2">Rental partners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner end -->
+        <!-- best offer start -->
+        <section class="mt-28 mb-20">
+            <div>
+                <h1 class="text-black text-5xl font-bold text-center">Best offers for you</h1>
+                <div class="flex justify-center md:gap-12 lg:gap-20 mt-11">
+                    <div class=" bg-[#FFBF0F] rounded-3xl md:p-10 lg:p-12">
+                        <div class="hero-content gap-20 flex-col lg:flex-row">
+                            <div class="">
+                                <h1 class="text-5xl font-black">15% OFF</h1>
+                                <p class="text-black text-sm font-medium py-4">on your next purchase</p>
+                                <p>use by May 2024</p>
+                            </div>
+                            <div>
+                                <h1 class="text-3xl font-bold">NEW15</h1>
+                                <p class="text-xl font-medium pt-4">Coupon Code</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" bg-[#F78C9C] rounded-3xl md:p-10 lg:p-12">
+                        <div class="hero-content gap-20 flex-col lg:flex-row">
+                            <div class="">
+                                <h1 class="text-5xl font-black">20% OFF</h1>
+                                <p class="text-black text-sm font-medium py-4">on your next purchase</p>
+                                <p>use by June 2024</p>
+                            </div>
+                            <div>
+                                <h1 class="text-3xl font-bold">Couple 20</h1>
+                                <p class="text-xl font-medium py-4">Coupon Code</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-20">
+                    <button class="btn text-sm font-bold text-[#1DD100] bg-white border-[#1DD100] rounded-xl px-9">See
+                        All Offers</button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="container mx-auto border-t-2 border-[#1DD100] rounded-full md:p-2 lg:px-2">
+        <div class="text-center mt-16">
+            <h1 class="text-black text-4xl font-bold pb-6">A Paribahan</h1>
+            <p class="text-xs">Bus ticket price ranges from 550 depending on preferred bus operator. Get best deal from reliable bus
+                operators at A Paribahan</p>
+        </div>
+    </main>
 </body>
 
 </html>
