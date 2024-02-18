@@ -12,7 +12,7 @@
 </head>
 
 <body class="font-raleway">
-    <header class="container mx-auto md:p-2 lg:px-7 hidden">
+    <header class="container mx-auto md:p-2 lg:px-7">
         <!-- navbar start -->
         <nav class="mt-2">
             <div class="navbar bg-base-100">
@@ -61,7 +61,7 @@
                                 class="text-[#1DD100] ">A Paribahan</span></h1>
                         <p class="mb-5 text-sm">Looking for great deals on bus tickets? We'll make it better for you!
                             Get the lowest prices and <br> renowned bus operators - all in one place.</p>
-                        <button
+                        <button onclick="buyTickets()"
                             class="btn btn-primary bg-[#1DD100] text-black text-xl font-bold border-none mt-4 px-5">Buy
                             Tickets</button>
                     </div>
@@ -138,21 +138,21 @@
         </section>
     </header>
     <!-- middle show -->
-    <main class="hidden container mx-auto border-t-2 border-[#1DD100] rounded-3xl md:p-2 lg:px-2">
+    <main class="container mx-auto border-t-2 border-[#1DD100] rounded-3xl md:p-2 lg:px-2">
         <div class="text-center mt-16">
             <h1 class="text-black text-4xl font-bold pb-6">A Paribahan</h1>
             <p class="text-xs">Bus ticket price ranges from 550 depending on preferred bus operator. Get best deal from
                 reliable bus
                 operators at A Paribahan</p>
         </div>
-        <section>
+        <section id="show-section">
             <!-- paribahan sedtion -->
             <div class="lg:flex">
                 <div class="flex-1 p-9">
                     <!-- seats left -->
                     <div class="flex justify-between bg-[#FFFFFF]">
-                        <div class="flex gap-4">
-                            <img src="images/bus-logo.png" class="max-w-14 rounded-lg" />
+                        <div class="md:flex lg:flex md:gap-3 lg:gap-4">
+                            <img src="images/bus-logo.png" class="w-8 h-8 rounded-lg" />
                             <div>
                                 <h1 class="text-3xl font-bold">A Paribahan</h1>
                                 <p class="py-2">Coach-009-WEB ! AC_Business</p>
@@ -173,7 +173,7 @@
                             <p class="text-xs font-semibold">Departure Time</p>
                             <h4 class="text-[#030712] text-xs font-semibold">9:00 PM</h4>
                         </div>
-                        <div class="flex justify-between text-xs font-medium p-7">
+                        <div class="flex justify-between text-xs font-medium md:p-6 lg:p-7">
                             <h4 class="p-4 rounded-xl bg-[#0307120D]">Boarding Point - Laxmipur</h4>
                             <h4 class=" p-4 rounded-xl bg-[#0307120D]">Dropping Point - Bogura</h4>
                             <h4 class="p-4 rounded-xl bg-[#0307120D]">Est. Time - 11 Hour</h4>
@@ -191,7 +191,7 @@
         </section>
         <!-- seat selection section -->
         <section>
-            <div class="rounded-3xl bg-white flex">
+            <div class="rounded-3xl bg-white lg:flex">
                 <div class="flex-1">
                     <h3 class="text-base font-semibold p-8">Select Your Seat</h3>
                     <div class="flex justify-between px-8">
@@ -375,7 +375,7 @@
             </div>
         </div>
     </section>
-    <footer class="hidden footer p-12 bg-neutral text-neutral-content">
+    <footer class="footer p-12 bg-neutral text-neutral-content">
         <aside>
             <h3 class="text-3xl font-extrabold text-white">Ticket</h3>
             <p>P-Ticket is a digital platform to make your <br> daily commuting better.</p>
@@ -391,6 +391,8 @@
                 </div>
             </div>
     </footer>
+    <script src="js script/utility.js"></script>
+    <script src="js script/ticket.js"></script>
 </body>
 
 </html>
