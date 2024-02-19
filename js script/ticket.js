@@ -18,6 +18,7 @@ for (const seat of seatsSelection) {
         const seatNum = getTextElementValueById('seat-count');
         let newSeatNum = seatNum + 1;
         setInnerText('seat-count', newSeatNum);
+        
         // seat left
         const seatLeft = getTextElementValueById('seat-left');
         let totalSeat = seatLeft - 1;
@@ -42,7 +43,10 @@ for (const seat of seatsSelection) {
         li.appendChild(p2);
         
         seatContainerShow.appendChild(li);
-
+        if(seatNum >= 4){
+            alert('only 4 seat for you');
+            return;
+        }
         //total price
         const perTicketPrice = getTextElementValueById('seat-price');
         const totalPrice = getTextElementValueById('Total-price');
