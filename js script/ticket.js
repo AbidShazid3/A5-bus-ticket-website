@@ -12,13 +12,18 @@ document.getElementById('scroll-button').addEventListener('click', function () {
 const seatsSelection = document.getElementsByClassName('kbd');
 for (const seat of seatsSelection) {
     seat.addEventListener('click', function (event) {
-        // background color
-        seat.style.backgroundColor = '#1DD100';
+        
         // seat
         const seatNum = getTextElementValueById('seat-count');
+        if(seatNum >= 4){
+            alert('only 4 seat for you');
+            return;
+        }
         let newSeatNum = seatNum + 1;
         setInnerText('seat-count', newSeatNum);
         
+        // background color
+        seat.style.backgroundColor = '#1DD100';
         // seat left
         const seatLeft = getTextElementValueById('seat-left');
         let totalSeat = seatLeft - 1;
@@ -43,10 +48,7 @@ for (const seat of seatsSelection) {
         li.appendChild(p2);
         
         seatContainerShow.appendChild(li);
-        if(seatNum >= 4){
-            alert('only 4 seat for you');
-            return;
-        }
+        
         //total price
         const perTicketPrice = getTextElementValueById('seat-price');
         const totalPrice = getTextElementValueById('Total-price');
@@ -64,7 +66,7 @@ btn.addEventListener('click', function () {
     // get the input value
     const inputField = document.getElementById('input-field');
     const inputFieldValue = inputField.value;
-    const inputFieldValueCode = inputFieldValue.split(' ').join('').toUpperCase();
+    const inputFieldValueCode = inputFieldValue.toUpperCase();
     if (inputFieldValueCode === 'NEW15') {
         hideElementById('laber-input');
         const grandTotal = getTextElementValueById('grand-total');
@@ -73,7 +75,7 @@ btn.addEventListener('click', function () {
         const discountInt = parseInt(discount)
         setInnerText('grand-total', discountInt);
     }
-    else if (inputFieldValueCode === 'COUPLE20') {
+    else if (inputFieldValueCode === 'COUPLE 20') {
         hideElementById('laber-input');
         const grandTotal2 = getTextElementValueById('grand-total');
         const totalPrices2 = getTextElementValueById('Total-price')
